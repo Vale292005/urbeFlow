@@ -6,12 +6,14 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import com.urbeflow.api.model.Ambulancia;
 import com.urbeflow.api.model.Camion;
 import com.urbeflow.api.model.Carro;
 import com.urbeflow.api.model.Vehiculo;
 
+@Component
 public class SimuladorTrafico implements CommandLineRunner {
 
     private final PeajeService peajeService;
