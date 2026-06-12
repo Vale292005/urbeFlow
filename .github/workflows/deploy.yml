@@ -22,9 +22,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # 3. Prueba la compilación limpia con Maven (Integración Continua)
-    - name: Build with Maven
-      run: mvn clean compile
+    # 3. Prueba Automatizada (Integración Continua)
+    - name: Run Automated Tests with Maven
+      run: mvn clean test
 
     # 4. Despliegue Continuo: Le avisa a Render que se actualice
     - name: Trigger Render Deploy

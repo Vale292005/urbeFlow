@@ -2,7 +2,7 @@
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
-RUN mvn clean package -DskipTests
+RUN mvn clean package 
 
 # Paso 2: Ejecutar la aplicación con Java 21 compatible con Mac M1/M2/M3 🍏 (Cambiado de 17 a 21)
 FROM eclipse-temurin:21-jre
